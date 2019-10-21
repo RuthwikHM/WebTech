@@ -27,6 +27,7 @@ h1{
 }
 
 .container-fluid{
+    margin:auto;
     display: flexbox;
     font-family: 'Roboto Mono', monospace;
     background-color: #ecfffd;
