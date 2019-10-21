@@ -1,0 +1,34 @@
+#logout{
+    position: relative;
+    right: 10px;
+}
+div a{
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+.nav-bar{
+    padding-bottom: 15px;
+}
+.form-inline{
+    padding-right: 65px;
+}
+
+.nav-item{
+    margin-right: 10px;
+}
+
+.navbar-brand{
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-right: 9px;
+}
+
+.container-fluid{
+    display: flexbox;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #ecfffd;
+}
+
