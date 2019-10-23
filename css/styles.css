@@ -2,17 +2,11 @@
     position: relative;
     right: 10px;
 }
-div a{
-    padding: 20px;
-}
-
-h1{
-    text-align: center;
-}
 
 .nav-bar{
     padding-bottom: 15px;
 }
+
 .form-inline{
     padding-right: 65px;
 }
@@ -21,15 +15,24 @@ h1{
     margin-right: 10px;
 }
 
+.nav-item-a{
+    font-family: 'Roboto Condensed', sans-serif;
+    color:whitesmoke;
+    padding:10px;
+}
+
 .navbar-brand{
     font-family: 'Roboto Condensed', sans-serif;
     padding-right: 9px;
 }
 
 .container-fluid{
+    padding-top: 20px;
     margin:auto;
-    display: flexbox;
     font-family: 'Roboto Mono', monospace;
     background-color: #ecfffd;
 }
 
+.card{
+    border-radius: 20px;
+}
