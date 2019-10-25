@@ -12,18 +12,26 @@
 }
 
 .nav-item{
+    justify-content: right !important;
     margin-right: 10px;
 }
 
 .nav-item-a{
     font-family: 'Roboto Condensed', sans-serif;
     color:whitesmoke;
+    font-size: 1.15rem;
     padding:10px;
+}
+
+.nav-item-a:hover{
+    color: greenyellow;
 }
 
 .navbar-brand{
     font-family: 'Roboto Condensed', sans-serif;
     padding-right: 9px;
+    color: #3f8688 !important;
+    font-size: 1.5em !important;
 }
 
 .container-fluid{
@@ -35,4 +43,10 @@
 
 .card{
     border-radius: 20px;
+}
+
+h1{
+    color:#000000;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
