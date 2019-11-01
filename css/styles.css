@@ -37,6 +37,7 @@
 .container-fluid{
     padding-top: 20px;
     margin:auto;
+    font-size: 1.25em;
     height: auto !important;
     font-family: 'Roboto Mono', monospace;
     background-image: linear-gradient(to bottom,#c6ff65, #6fffff,#00a1a9);
@@ -56,7 +57,9 @@ h1{
     text-align: center;
 }
 
-
+.btn-dark:hover{
+    color:greenyellow !important;
+}
 .h1{
     text-align: center;
     font-family: Arial, sans-serif;
