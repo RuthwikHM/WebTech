@@ -23,16 +23,22 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 768px) and (min-height: 1024px){
         .container-fluid{
           font-size: 1.25em;
         }
       }
-      @media only screen and (min-width: 1024px) and (min-height:1366px) {
+      /*Responsible for displaying the li items vertically on smaller devices.*/
+      @media only screen and (min-width: 360px) and (max-width: 768px){
+      .collapse ul li a{
+         display:block;
+      }
+    }
+      @media only screen and (min-width: 1022px) and (min-height:1366px) {
         .container-fluid{
           padding-left: 20px !important;
           padding-right: 20px !important;
-          font-size: 1.8em;
+          font-size: 3em !important;
         }
       }
     </style>
@@ -45,10 +51,10 @@
     <a class="navbar-brand mx-auto" href="#">OppidanUtils</a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto nav-pills pull-right">
-        <form class="form-inline my-2 my-lg-0">
+        <!-- <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        </form> -->
         <li class="nav-item">
           <a class="nav-item-a" href="#">Register a business</a>
           <a class="nav-item-a" href="#">Services</a>
@@ -91,7 +97,7 @@
       </div>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-    <h2 align="center">OUR FOUNDERS</h2>
+    <h2 align="center">OUR FOUNDER</h2>
     <br>
     <img class="founders img-fluid" src="../static/Founder1.jpg" alt="Shapiro">
     <br>

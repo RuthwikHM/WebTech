@@ -38,7 +38,7 @@
     padding-top: 20px;
     margin:auto;
     font-size: 1.25em;
-    height: auto !important;
+    overflow: hidden;
     font-family: 'Roboto Mono', monospace;
     background-image: linear-gradient(to bottom,#c6ff65, #6fffff,#00a1a9);
 }
@@ -46,6 +46,7 @@
 .card{
     border-radius: 20px;
     background-color:#fbff97 !important ;
+    margin:12px !important;
 }
 .card img{
     background-color:#fbff97 !important ;
@@ -95,5 +96,12 @@ h1{
     color: black;
   }
 
-  
-  
+.align {
+    height: 300px !important;;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.glyphicon{
+    right:5px !important;
+}

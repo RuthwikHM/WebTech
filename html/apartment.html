@@ -9,8 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <!-- Links for custom stylesheets -->
+    <!-- Links for custom stylesheets and JS -->
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/script.js"></script>
     <!-- Links for bootstrap realted stylesheets and jquery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -26,9 +27,20 @@
         <style>
             @media only screen and (min-width: 1024px) and (min-height:1366px){
               .container-fluid{
-                  font-size: 2em;
+                  font-size:1.9em !important;
               }
             }
+            @media only screen and (min-width: 768px){
+                .container-fluid{
+                    font-size: 1.6em;
+                }
+            }
+            /*Responsible for displaying the li items vertically on smaller devices.*/
+            @media only screen and (min-width: 360px) and (max-width: 768px){
+                .collapse ul li a{
+                   display:block;
+                }
+              }
           </style>
     <!-- Responsive navbar using bootstrap. -->
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
@@ -36,13 +48,13 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand mx-auto" href="#">OppidanUtils</a>
+        <a class="navbar-brand mx-auto" href="./Aboutus.html">OppidanUtils</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <form class="form-inline my-2 my-lg-0">
+                <!-- <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                </form> -->
                 <li class="nav-item">
                     <a class="nav-item-a" href="#">Register a business</a>
                     <a class="nav-item-a" href="#">Services</a>
@@ -50,11 +62,10 @@
                     <a class="nav-item-a" href="#">Contact</a>
                 </li>
             </ul>
-
             <a href="#" class="btn btn-success btn-md">
-                <span class="glyphicon glyphicon-log-out"></span> Log out
+                <span class="glyphicon glyphicon-log-out"></span>Log out
             </a>
-        </div>
+        </div>  
     </nav>
 </head>
 
@@ -62,6 +73,7 @@
     <div class="container-fluid">
         <h1>Services offered for apartments.</h1>
         <div class="row align-items-center justify-content-center">
+            <div class="card-deck">
             <div class="card" style="width:18rem;">
                 <img src="../static/electrician.jpg" class="card-img-top " alt="Electrician">
                 <div class="card-body">
@@ -86,8 +98,10 @@
                 </div>
             </div>
         </div>
+    </div>
 
         <div class="row align-items-center justify-content-center">
+            <div class="card-deck">
             <div class="card" style="width:18rem;">
                 <img src="../static/painter.jpg" class="card-img-top " alt="Painter">
                 <div class="card-body">
@@ -112,13 +126,15 @@
                 </div>
             </div>
         </div>
-
+    </div>
+    
         <div class="row align-items-center justify-content-center">
+                <div class="card-deck">
             <div class="card" style="width:18rem;">
                 <img src="../static/pool.jpg" class="card-img-top " alt="Pool">
                 <div class="card-body">
                     <p class="card-text">Pool maintainence near you.</p>
-                    <a href="#" class="btn btn-dark">Pool services</a>
+                    <a href="#" class="btn btn-dark">Pool services nearby</a>
                 </div>
             </div>
             <div class="card" style="width:18rem;">
@@ -130,6 +146,7 @@
             </div>
         </div>
     </div>
+</div>
 </body>
 
 </html>
