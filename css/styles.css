@@ -24,7 +24,7 @@
 }
 
 .nav-item-a:hover{
-    color: greenyellow;
+    color: #66fcf1;
 }
 
 .navbar-brand{
@@ -40,12 +40,14 @@
     font-size: 1.25em;
     overflow: hidden;
     font-family: 'Roboto Mono', monospace;
-    background-image: linear-gradient(to bottom,#c6ff65, #6fffff,#00a1a9);
+    /* background-image: linear-gradient(to bottom,#c6ff65, #6fffff,#00a1a9); */
+    background-color: #0b0c10;
+    color: #c5c6c7;
 }
 
 .card{
     border-radius: 20px;
-    background-color:#fbff97 !important ;
+    background-color:#45a29e !important ;
     margin:12px !important;
 }
 .card img{
@@ -56,10 +58,11 @@ h1{
     color:#000000;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+    color: #66fcf1;
 }
 
 .btn-dark:hover{
-    color:greenyellow !important;
+    color:#66fcf1 !important;
 }
 .h1{
     text-align: center;
@@ -71,20 +74,16 @@ h1{
     text-align: left;
     font: italic;
     font-family: 'Times New Roman', Times, serif;
-    color: darkslategray;
+    color: #66fcf1;
   }
 
   p{
     text-align: left;
     font-family: cursive;
-    /* color: darkred; */
   }
 
   .founders {
     border-radius: 55%;
-    /* padding: 5px; */
-    /* width: 150px; */
-    color: aliceblue;
     display: block;
     margin: auto;
     width: auto;
