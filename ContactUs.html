@@ -14,52 +14,77 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- Responsive navbar using bootstrap. -->
-  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand mx-auto" href="#">OppidanUtils</a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto nav-pills pull-right">
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-        <li class="nav-item">
-          <a class="nav-item-a" href="#">Register a business</a>
-          <a class="nav-item-a" href="#">Services</a>
-          <a class="nav-item-a" href="#">About Us</a>
-          <a class="nav-item-a" href="#">Contact</a>
-        </li>
-      </ul>
-      <a href="#" class="btn btn-success btn-md">
-        <span class="glyphicon glyphicon-log-out"></span> Log out
-      </a>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand mx-auto" href="./Aboutus.html">OppidanUtils</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <!-- <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form> -->
+              <li class="nav-item">
+                  <a class="nav-item-a" href="#">Register a business</a>
+                  <a class="nav-item-a" href="#">Services</a>
+                  <a class="nav-item-a" href="./Aboutus.html">About Us</a>
+                  <a class="nav-item-a" href="#">Contact</a>
+              </li>
+          </ul>
+          <a href="#" class="btn btn-success btn-md">
+              <span class="glyphicon glyphicon-log-out"></span>Log out
+          </a>
+      </div>  
   </nav>
   <style>
+    .nav-bar{
+    padding-bottom: 15px;
+}
+.nav-item{
+    justify-content: right !important;
+    margin-right: 10px;
+}
+
+.nav-item-a{
+    font-family: 'Roboto Condensed', sans-serif;
+    color:whitesmoke;
+    font-size: 1.15rem;
+    padding:10px;
+}
+
+.nav-item-a:hover{
+    color: #66fcf1;
+}
+
+.navbar-brand{
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-right: 9px;
+    color: #6dffff !important;
+    font-size: 1.5em !important;
+}
       body
       {
-          background-color:blue;
+          background-color:#0b0c10;
+          color:#c5c6c7;
       }
       .first
       {
-          color:white;
+          /* color:white; */
           text-align: center;
           font-style: Optima, sans-serif;
       }
       .add
       {
-        color:white;
+        color:#66fcf1;
           text-align: center;
           font-style: Optima, sans-serif;
 
       }
       .add1
       {
-        color:white;
+          color:#c5c6c7;
           text-align: center;
           font-style: Optima, sans-serif;
           text-decoration: underline;
@@ -68,7 +93,7 @@
 </head>
 <body>
     <div class="contact">
-    <h1 class="first" > We'd Love To Hear From You</h1>
+    <h1 class="first" style="margin-top: 50px;" > We'd Love To Hear From You</h1>
     <p><br><br></p>
     <h3 class='add'>Our Address</h3>
     
