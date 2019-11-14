@@ -22,32 +22,35 @@
   </script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-      @media only screen and (min-width: 768px) {
-        .container-fluid{
-          font-size: 1.215em;
-          overflow-x: hidden;
-        }
+  <style>
+    @media only screen and (min-width: 768px) {
+      .container-fluid {
+        font-size: 1.215em;
+        overflow-x: hidden;
       }
-      @media only screen and (min-width:1024px) and (min-height:1366px) {
-        .container-fluid{
-          font-size: 2.338em;
-        }
+    }
+
+    @media only screen and (min-width:1024px) and (min-height:1366px) {
+      .container-fluid {
+        font-size: 2.338em;
       }
-      /*Responsible for displaying the li items vertically.*/
-      @media only screen and (min-width: 360px) and (max-width: 768px){
-        .collapse ul li a{
-           display:block;
-        }
+    }
+
+    /*Responsible for displaying the li items vertically.*/
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+      .collapse ul li a {
+        display: block;
+        text-align: left;
       }
-    </style>
+    }
+  </style>
   <!-- Responsive navbar using bootstrap. -->
   <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand mx-auto" href="#">OppidanUtils</a>
+    <a class="navbar-brand mx-auto" href="./Aboutus.html">OppidanUtils</a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto nav-pills pull-right">
         <!-- <form class="form-inline my-2 my-lg-0">
@@ -55,10 +58,10 @@
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form> -->
         <li class="nav-item">
-          <a class="nav-item-a" href="#">Register a business</a>
-          <a class="nav-item-a" href="#">Services</a>
-          <a class="nav-item-a" href="./Aboutus.html">About Us</a>
-          <a class="nav-item-a" href="#">Contact Us</a>
+          <a class="btn btn-dark" href="#">Register a business</a>
+          <a class="btn btn-dark" href="#">Services</a>
+          <a class="btn btn-dark" href="./Aboutus.html">About Us</a>
+          <a class="btn btn-dark" href="./Contactus.html">Contact Us</a>
         </li>
       </ul>
       <a href="#" class="btn btn-success btn-md">
@@ -114,7 +117,7 @@
 
         <div class="card" style="width:18rem;">
           <img src="../static/mechanic.jpg" class="card-img-top img-fluid" alt="Mechanic">
-          <div class="card-body"> 
+          <div class="card-body">
             <p class="card-text">Mechanics near you.</p>
             <a href="#" class="btn btn-dark">Find a Mechanic</a>
           </div>
@@ -142,4 +145,5 @@
     </div>
   </div>
 </body>
+
 </html>

@@ -15,18 +15,6 @@
     justify-content: right !important;
     margin-right: 10px;
 }
-
-.nav-item-a{
-    font-family: 'Roboto Condensed', sans-serif;
-    color:whitesmoke;
-    font-size: 1.15rem;
-    padding:10px;
-}
-
-.nav-item-a:hover{
-    color: #66fcf1;
-}
-
 .navbar-brand{
     font-family: 'Roboto Condensed', sans-serif;
     padding-right: 9px;
@@ -42,16 +30,25 @@
     font-family: 'Roboto Mono', monospace;
     /* background-image: linear-gradient(to bottom,#c6ff65, #6fffff,#00a1a9); */
     background-color: #0b0c10;
-    color: #c5c6c7;
+    color: white;
 }
 
 .card{
     border-radius: 20px;
     background-color:#45a29e !important ;
     margin:12px !important;
+    position: relative;
+    top: 0px;
+    transition: top ease-in 0.15s;
 }
-.card img{
-    background-color:#fbff97 !important ;
+
+.card:hover{    
+    top:-20px;
+}
+
+.card .btn-dark:hover{
+    color:#0b0c10 !important;
+    background-color: white !important;
 }
 
 h1{
@@ -62,8 +59,10 @@ h1{
 }
 
 .btn-dark:hover{
-    color:#66fcf1 !important;
+    color:#0b0c10 !important;
+    background-color: #66fcf1 !important;
 }
+
 .h1{
     text-align: center;
     font-family: Arial, sans-serif;
@@ -92,7 +91,15 @@ h1{
   .ourheroes {
     font-family: Arial, Helvetica, sans-serif;
     font: bold;
-    color: black;
+    color: #66fcf1;
+  }
+.img{
+    position: relative;
+    top:0;
+    transition: ease 0.5s;
+}
+  .img:hover{
+    top:-30px;
   }
 
 .align {

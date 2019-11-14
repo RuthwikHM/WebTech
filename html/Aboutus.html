@@ -4,7 +4,7 @@
 <head>
   <title>About Us</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400i&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -22,33 +22,36 @@
   </script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-      @media only screen and (min-width: 768px) and (min-height: 1024px){
-        .container-fluid{
-          font-size: 1.25em;
-        }
-      }
-      /*Responsible for displaying the li items vertically on smaller devices.*/
-      @media only screen and (min-width: 360px) and (max-width: 768px){
-      .collapse ul li a{
-         display:block;
+  <style>
+    @media only screen and (min-width: 768px) and (min-height: 1024px) {
+      .container-fluid {
+        font-size: 1.25em;
       }
     }
-      @media only screen and (min-width: 1022px) and (min-height:1366px) {
-        .container-fluid{
-          padding-left: 20px !important;
-          padding-right: 20px !important;
-          font-size: 3em !important;
-        }
+
+    /*Responsible for displaying the li items vertically on smaller devices.*/
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+      .collapse ul li a {
+        display: block;
+        text-align: left;
       }
-    </style>
+    }
+
+    @media only screen and (min-width: 1022px) and (min-height:1366px) {
+      .container-fluid {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        font-size: 3em !important;
+      }
+    }
+  </style>
   <!-- Responsive navbar using bootstrap. -->
   <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand mx-auto" href="#">OppidanUtils</a>
+    <a class="navbar-brand mx-auto" href="./Aboutus.html">OppidanUtils</a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto nav-pills pull-right">
         <!-- <form class="form-inline my-2 my-lg-0">
@@ -56,10 +59,10 @@
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form> -->
         <li class="nav-item">
-          <a class="nav-item-a" href="#">Register a business</a>
-          <a class="nav-item-a" href="#">Services</a>
-          <a class="nav-item-a" href="#">About Us</a>
-          <a class="nav-item-a" href="#">Contact</a>
+          <a class="btn btn-dark" href="#">Register a business</a>
+          <a class="btn btn-dark" href="#">Services</a>
+          <a class="btn btn-dark" href="#">About Us</a>
+          <a class="btn btn-dark" href="./Contactus.html">Contact Us</a>
         </li>
       </ul>
       <a href="#" class="btn btn-success btn-md">
@@ -74,36 +77,39 @@
     <h1>WHAT ARE WE ALL ABOUT?</h1>
     <br>
     <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-      <h2 class="mission">Mission</h2>
-      <div class="p-div">
-        <p>We at Oppidan Utils believe in the best service for your home.<br>
-          It is our mission to provide this service to you for your comfort and benefit</p>
-      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <h2 class="mission">Mission</h2>
+        <div class="p-div">
+          <p>We at Oppidan Utils believe in the best service for your home.<br>
+            It is our mission to provide this service to you for your comfort and benefit</p>
+        </div>
 
-      <h2 class="mission">Vision</h2>
-      <div>
-        <p>�To be the fastest growing,<br>most rewarding and most transformative leadership
-          community.� </p>
-      </div>
+        <h2 class="mission">Vision</h2>
+        <div>
+          <p>�To be the fastest growing,<br>most rewarding and most transformative leadership
+            community.� </p>
+        </div>
 
-      <h2 class="mission">About Us</h2>
-      <div class="p-div">
-        <p>Oppidan Utils was created as an attempt to help the average home owner with daily
-          problems<br>We at Oppidan help promote local worksmen and establish a clientelle amongst home owners<br>We
-          believe in the spirit of community building and helping with the overall growth of service providers<br>Every
-          enlisted service provider is amongst the finest at their craft and are all certified by trusted professionals
-          here at Oppidan<br>We hope you enjoy out services.<br>Make sure you tell your friends!!!</p>
+        <h2 class="mission">About Us</h2>
+        <div class="p-div">
+          <p>Oppidan Utils was created as an attempt to help the average home owner with daily
+            problems<br>We at Oppidan help promote local worksmen and establish a clientelle amongst home owners<br>We
+            believe in the spirit of community building and helping with the overall growth of service
+            providers<br>Every
+            enlisted service provider is amongst the finest at their craft and are all certified by trusted
+            professionals
+            here at Oppidan<br>We hope you enjoy out services.<br>Make sure you tell your friends!!!</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img">
+        <h2 align="center" style="color: #45a29e;">OUR FOUNDER</h2>
+        <br>
+        <img class="founders img-fluid" src="../static/Founder1.jpg" alt="Shapiro">
+        <br>
+        <h3 class="ourheroes" align="center">BEN SHAPIRO</h3>
       </div>
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-    <h2 align="center" style="color: #45a29e;">OUR FOUNDER</h2>
-    <br>
-    <img class="founders img-fluid" src="../static/Founder1.jpg" alt="Shapiro">
-    <br>
-    <h3 class="ourheroes" align="center">BEN SHAPIRO</h3>
-      </div>
-    </div> 
   </div>
 </body>
+
 </html>
