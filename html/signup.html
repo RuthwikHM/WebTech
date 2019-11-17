@@ -49,7 +49,7 @@ function passwordcheck(form)
     }
     else
     {
-        alert("Welcome to Oppidan Utils");
+        //alert("Welcome to Oppidan Utils");
         return true;
     }
 
@@ -108,7 +108,7 @@ function passwordcheck(form)
     <h1 class="head">Welcome to Oppidan Utils</h1>
     <br>
    <!--form with various fields to take details from user-->
-   <form class="form" method="POST" onSubmit = "return passwordcheck(this)">
+   <form class="form" method="POST" onSubmit = "return passwordcheck(this)" action="register.php">
        <br>
     <div class="main">
         
@@ -150,7 +150,7 @@ function passwordcheck(form)
         <br>
         <br>
     </div>
-    <button class="button">Submit</button>
+    <button class="button" name="submit">Submit</button>
 </form>
 </body>
 
