@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <!--img src="helping_GGSC.jpg" alt="background image" id="bgimg"-->
+    
     <title>Login</title>
     <head>
         <script src="../js/script.js"></script>
@@ -21,21 +21,20 @@
         font-size:300%;
         color: rgb(231, 132, 19);
     }
-    a:link{
-        color: rgb(39, 134, 172);
+    .links {
+        color:rgb(39, 134, 172);
         font-size: large;
         margin-left: 50px;
+        padding: 5px;
+        background-color:tomato;
     }
-    #newb{
+    
+    .links:hover{
+        color : rgb(46, 173, 78);
+    }
+    
+    #signup {
         color:rgb(39, 134, 172);
-    }
-    #newb:hover{
-        color: rgb(46, 173, 78);
-    }
-    #newb:visited{
-        color: rgb(160, 71, 71); 
-    }
-    .signup {
         float:right;
         margin-right: 50px;
     }
@@ -47,124 +46,53 @@
     .forgotpswd{
         text-align: center;
         font-size: larger;
-        /*color: red;*/
+        
         width: auto;
         padding: 10px 20px;
         
     }
     #bottom{
-        /* padding-bottom: 20%; */
+        
         bottom:90px;
-        right:200px;
-        position:absolute;
+        margin-right:50px;
+        
     }
-    .close {
-  /* position: absolute; */
-  right: 30px;
-  top: 0;
-  color: #000;
-  font-size: 25px;
-  font-weight: bold;
-  /* position: relative; */
-  
-}
-.box {
-    display: none; 
-  position: fixed; 
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; 
-    height: 100%; 
-  overflow: auto; /* Enable scroll if needed */
-  /*background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); 
-  padding-top: 60px;
-}
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
-.close2 {
-    /* text-align: center;
-  margin: 24px 0 12px 0; */
-    position: relative;
-}
-    .modal-content {
-  background-color: #20472700;
-  margin: 5% auto 15% auto; 
-  border: 1px solid #888;
-  width: 80%; 
-}
-.abutus{
-    text-align: center;
-    color: rgb(46, 173, 78);
-
-}
-.abupara{
-    text-decoration: seagreen;
-    text-align: justify;
-    padding: 20px;
-    margin: 10px;
-}
-    .animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
-}
-  
-@keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
-}
+    
     
     </style>
-    <body style="background-image: url('/static/helping_GGSC.jpg'); background-attachment: fixed; background-size: 100% 100%;">
+    <body style="background-image: url('helping_GGSC.jpg'); background-attachment: fixed; background-size: 100% 100%;">
         <br>
-        <p><a id="newb" href="#">New Business</a>
-        <a href="./signup.html" class="signup">Sign up</a>
+        <p><a class="links" id="newb" href="new-business_o.html">New Business</a>
+        <a href="signup.html" class="links" id="signup" >Sign up</a>
         </p>
         <h1> <p style="text-align: center;" id="heading">OppidanUtils</p></h1>
         <form action="login.php" method="POST">
             <div class="essential">
-                <label for="usname" style="font-size:150%;   color:rgb(77, 199, 53);border: 5px; border-color: maroon;margin: 10px; background-color:rgba(44, 44, 43, 0); padding: 5px;" >Username: </label>
+                
+                <label for="usname" style="font-size:150%;   color:rgb(77, 199, 53);margin: 10px; background-color:navajowhite; padding: 5px;" >Username: </label>
                 <input type="text" name="usname" id ="uname" style="font-size: larger; border-radius:10px;" placeholder="enter username" required>
                 <br>
                 <br>
                 <br>
                 
 
-                <label for="passwd" style="font-size: 150%;  color: rgb(77, 199, 53); padding: 5px;background-color: rgba(44, 44, 43, 0); margin: 10px;" >Password: </label>
+                <label for="passwd" style="font-size: 150%;  color: rgb(77, 199, 53); padding: 5px;background-color:navajowhite; margin: 10px;" >Password: </label>
                 <input type="password" name="passwd" id="passwd" style="font-size: larger; border-radius:10px;" placeholder="enter password" required>
                 
                 </div>
 
                 <div class="forgotpswd">
-                    <button style="background-color: rgb(18, 65, 62); color: #c5c6c7;" >Forgot Password?</button>
+                    <button style="background-color: rgb(18, 65, 62); color: #c5c6c7;" >Login</button>
 
                 </div>
                 
-                <!-- <div id="popup" class="modal-content animate" hidden>
-                        <div class="close2">
-                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                        </div>
-                        <div class="box">
-                        <h1 class="abutus">About us</h1>
-                        <br>
-                        <br>
-                        <p class="abupara"> Hey there!! We are students of PES University ,CSE 3rd sem, and this is our Web Tech project!!</p>
-                </div>
-                </div> -->
+                
             </div>
         </div>
             <div id="bottom">
-                <a href="Aboutus.html" onclick="document.getElementById('popup').style.display='block'">about us</a>
                 
+                
+                <a href="Aboutus.html" class="links">about us</a>
             </div>
         </form>
     </body>
