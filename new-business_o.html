@@ -1,0 +1,223 @@
+<html>
+    
+<head>
+    <title>New Business     Sign up</title>
+    <!--Jquery links-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!-- Responsive navbar using bootstrap. -->
+      <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mx-auto" href="#">OppidanUtils</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto nav-pills pull-right">
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <li class="nav-item">
+              <a class="nav-item-a" href="#">Register a business</a>
+              <a class="nav-item-a" href="#">Services</a>
+              <a class="nav-item-a" href="#">About Us</a>
+              <a class="nav-item-a" href="#">Contact</a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-success btn-md">
+            <span class="glyphicon glyphicon-log-out"></span> Log out
+          </a>
+        </div>
+      </nav>
+      <!--Jquery code-->
+<script>
+$(document).ready(function(){
+
+$(".input").on({
+  mouseenter: function(){
+    $(this).css({"height":"50px","width":"300px"});
+  },
+  focus: function(){
+    $(this).css({"height":"50px","width":"300px"});
+  },
+  mouseleave: function(){
+    $(this).css({"height":"auto","width":"auto"});}
+}),
+   $(".input").click(function(){
+    $(this).css("border", "solid 5px #265134");
+    }),
+    $(".input").blur(function(){
+        $(this).css({"border":"none","height":"auto","width":"auto"});
+
+    })
+});
+
+</script>
+<!--validation of password and confirm password-->
+<script>
+function passwordcheck(form)
+{
+    var passwd=form.password.value;
+    var conpasswd=form.conpassword.value;
+    if (passwd!=conpasswd)
+    {
+        alert("Entered passwords do not match. Please re-enter");
+        return false;
+    }
+    else
+    {
+        alert("Welcome to Oppidan Utils");
+        return true;
+    }
+
+}
+
+</script>
+    <style>
+    .head{
+        text-align: center;
+        color: rgb(73, 204, 47);
+        font-family: fantasy;
+    }
+    .body{
+        background-color: rgb(70, 85, 100);
+        text-align: center;
+        overflow: auto;
+        
+    }
+    .label{
+        background-color: springgreen;
+        padding: 5px;
+        margin: 10px;
+        font-size:x-large;
+
+    }
+    .input{
+        padding: 5px;
+        font-size: larger;
+        
+    }
+   .form{
+       
+       border:solid 5px #453535;
+       text-align: center;
+       
+       
+        
+   }
+   button{
+            width: auto;
+            padding: 10px 20px;
+            border: none;
+            background-color: rgb(41, 128, 48); 
+            color: #453535;
+        }
+    button:hover{
+            opacity: 0.5;
+            cursor: pointer;
+            
+        } 
+/* .error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left; */
+}
+    
+    </style>
+</head>
+<body class="body">
+    <h1 class="head">Welcome to Oppidan Utils</h1>
+    <h3 class="head">Set up your business with us and you will find its benifits soon!!</h3>
+   
+   <br><br>
+   <!--form with various fields to take details from user-->
+   <form class="form" method="POST" onSubmit = "return passwordcheck(this)" action="newbusiness.php">
+      <!-- <?php include('errors.php'); ?> -->
+       <br>
+    <div class="main">
+        
+        <label class="label" for="name">Name of business:</label>
+        <input class="input" type="text" name="name" placeholder="Enter name" required>
+        <br>
+        <br>
+        <label class="label" for="email">Official E-mail:</label>
+        <input class="input" type="email" name="email" placeholder="Enter E-mail">
+        <br>
+        <br>
+        <label class="label" for="address">Address:</label>
+        <input class="input" type="text" name="address" placeholder="Enter address">
+        <br>
+        <br>
+        <label class="label" for="area">Area:</label>
+        <select class="input" name="area" aria-placeholder="Select address" required>
+            <option value="" disabled selected hidden>select address</option>
+            <option value="1">J.P.nagar</option>
+            <option>Jayanagar</option>
+            <option>Bannerghata road</option>
+            <option>Whitefeild</option>
+            <option>Electronic city</option>
+            <option>Banashankari</option>
+            <option>Indiranagar</option>
+            <option>Yelahanka</option>
+            <option>Magestic</option>
+            <option>M.G.road</option>
+            
+
+
+
+        </select>
+        <br><br>
+        <label class="label" for="type">Business Type:</label>
+        <select class="input" name="type" aria-placeholder="Select address" required>
+            <option value="" disabled selected hidden>select service</option>
+            <option value="1">Electrician</option>
+            <option>Mechanic</option>
+            <option>Plumber</option>
+            <option>Carpenter</option>
+            <option>Pool</option>
+            <option>Gym</option>
+            <option>Security</option>
+            <option>Household Maids</option>
+            <option>Cobbler</option>
+            <option>Painter</option>
+            
+
+
+
+        </select>
+        <br>
+        <br>
+        <label class="label" for="username">Username:</label>
+        <input class="input" type="text" name="username" placeholder="Enter Username" required>
+        <br>
+        <br>
+        <label class="label" for="password">Password:</label>
+        <input class="input" type="password" name="password" placeholder="********" required>
+        <br>
+        <br>
+        <label class="label" for="conpassword">Confirm Password:</label>
+        <input class="input" type="password" name="conpassword" placeholder="********" required>
+        <br>
+        <br>
+        
+        
+
+    </div>
+    <button class="button">Submit</button>
+</form>
+</body>
+
+
+
+</html>
