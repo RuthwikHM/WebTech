@@ -1,0 +1,159 @@
+<html>
+    
+<head>
+    <title>Sign up</title>
+    <!-- Custom css -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--Jquery links-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!--Jquery code-->
+<script>
+$(document).ready(function(){
+
+$(".input").on({
+  mouseenter: function(){
+    $(this).css({"height":"50px","width":"300px"});
+  },
+  focus: function(){
+    $(this).css({"height":"50px","width":"300px"});
+  },
+  mouseleave: function(){
+    $(this).css({"height":"auto","width":"auto"});}
+}),
+   $(".input").click(function(){
+    $(this).css("border", "solid 5px #265134");
+    }),
+    $(".input").blur(function(){
+        $(this).css({"border":"none","height":"auto","width":"auto"});
+
+    })
+});
+
+</script>
+<!--validation of password and confirm password-->
+<script>
+function passwordcheck(form)
+{
+    var passwd=form.password.value;
+    var conpasswd=form.conpassword.value;
+    if (passwd!=conpasswd)
+    {
+        alert("Entered passwords do not match. Please re-enter");
+        return false;
+    }
+    else
+    {
+        alert("Welcome to Oppidan Utils");
+        return true;
+    }
+
+}
+
+</script>
+    <style>
+    .head{
+        text-align: center;
+        color: rgb(73, 204, 47);
+        font-family: fantasy;
+    }
+    .body{
+        background-color: rgb(70, 85, 100);
+        text-align: center;
+        overflow: auto;
+        
+    }
+    .label{
+        background-color: springgreen;
+        padding: 5px;
+        margin: 10px;
+        font-size:x-large;
+
+    }
+    .input{
+        padding: 5px;
+        font-size: larger;
+        
+    }
+   .form{
+       
+       border:solid 5px #453535;
+       text-align: center;
+       
+       
+        
+   }
+   button{
+            width: auto;
+            padding: 10px 20px;
+            border: none;
+            background-color: rgb(41, 128, 48); 
+            color: #c5c6c7;
+            margin-bottom: 5px;
+        }
+    button:hover{
+            opacity: 0.5;
+            cursor: pointer;
+            
+        } 
+    
+    </style>
+</head>
+<body class="body">
+    <h1 class="head">Welcome to Oppidan Utils</h1>
+    <br>
+   <!--form with various fields to take details from user-->
+   <form class="form" method="POST" onSubmit = "return passwordcheck(this)">
+       <br>
+    <div class="main">
+        
+        <label class="label" for="name">Name:</label>
+        <input class="input" type="text" name="name" placeholder="Enter name" required>
+        <br>
+        <br>
+        <label class="label" for="email">E-mail:</label>
+        <input class="input" type="email" name="email" placeholder="Enter E-mail" required>
+        <br>
+        <br>
+        <label class="label" for="address">Address:</label>
+        
+        <select class="input" name="address" aria-placeholder="Select address" required>
+                <option value="" disabled selected hidden>select address</option>
+            <option value="1">J.P.nagar</option>
+            <option>Jayanagar</option>
+            <option>Bannerghata road</option>
+            <option>Whitefeild</option>
+            <option>Electronic city</option>
+            <option>Banashankari</option>
+            <option>Indiranagar</option>
+            <option>Yelahanka</option>
+            <option>Magestic</option>
+            <option>M.G.road</option>
+        </select>
+        <br>
+        <br>
+        <label class="label" for="username">Username:</label>
+        <input class="input" type="text" name="username" placeholder="Enter Username" required>
+        <br>
+        <br>
+        <label class="label" for="password">Password:</label>
+        <input class="input" type="password" name="password" placeholder="********" required>
+        <br>
+        <br>
+        <label class="label" for="conpassword">Confirm Password:</label>
+        <input class="input" type="password" name="conpassword" placeholder="********" required>
+        <br>
+        <br>
+    </div>
+    <button class="button">Submit</button>
+</form>
+</body>
+
+
+
+</html>
