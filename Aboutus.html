@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>About Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Links for custom stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Links for bootstrap realted stylesheets and jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    @media only screen and (min-width: 768px) and (min-height: 1024px) {
+      .container-fluid {
+        font-size: 1.25em;
+      }
+    }
+
+    /*Responsible for displaying the li items vertically on smaller devices.*/
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+      .collapse ul li a {
+        display: block;
+        text-align: left;
+      }
+    }
+
+    @media only screen and (min-width: 1022px) and (min-height:1366px) {
+      .container-fluid {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        font-size: 3em !important;
+      }
+    }
+  </style>
+  <!-- Responsive navbar using bootstrap. -->
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand mx-auto" href="./Aboutus.html">OppidanUtils</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto nav-pills pull-right">
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+        <li class="nav-item">
+            <a class="btn btn-dark" href="new-business_o.html">Register a business</a>
+            <a class="btn btn-dark" href="./Aboutus.html">About Us</a>
+            <a class="btn btn-dark" href="./Contactus.html">Contact Us</a>
+        </li>
+      </ul>
+      <a href="login.php?logout='1'" class="btn btn-success btn-md">
+        <span class="glyphicon glyphicon-log-out"></span> Log out
+      </a>
+    </div>
+  </nav>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <h1>WHAT ARE WE ALL ABOUT?</h1>
+    <br>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <h2 class="mission">Mission</h2>
+        <div class="p-div">
+          <p>We at Oppidan Utils believe in the best service for your home.<br>
+            It is our mission to provide this service to you for your comfort and benefit</p>
+        </div>
+
+        <h2 class="mission">Vision</h2>
+        <div>
+          <p>To be the fastest growing,<br>most rewarding and most transformative leadership
+            community. </p>
+        </div>
+
+        <h2 class="mission">About Us</h2>
+        <div class="p-div">
+          <p>Oppidan Utils was created as an attempt to help the average home owner with daily
+            problems<br>We at Oppidan help promote local worksmen and establish a clientelle amongst home owners<br>We
+            believe in the spirit of community building and helping with the overall growth of service
+            providers<br>Every
+            enlisted service provider is amongst the finest at their craft and are all certified by trusted
+            professionals
+            here at Oppidan<br>We hope you enjoy out services.<br>Make sure you tell your friends!!!</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img">
+        <h2 align="center" style="color: #45a29e;">OUR FOUNDER</h2>
+        <br>
+        <img class="founders img-fluid" src="Founder1.jpg" alt="Shapiro">
+        <br>
+        <h3 class="ourheroes" align="center">BEN SHAPIRO</h3>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
