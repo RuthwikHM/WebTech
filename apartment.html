@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apartment</title>
+    <!-- Including JS scripts -->
+    <!-- Links for google fonts. -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Links for custom stylesheets and JS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Links for bootstrap realted stylesheets and jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        @media only screen and (min-width: 1024px) and (min-height:1366px) {
+            .container-fluid {
+                font-size: 1.9em !important;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .container-fluid {
+                font-size: 1.6em;
+            }
+        }
+
+        /*Responsible for displaying the li items vertically on smaller devices.*/
+        @media only screen and (min-width: 360px) and (max-width: 768px) {
+            .collapse ul li a {
+                display: block;
+                text-align: left;
+            }
+        }
+    </style>
+    <!-- Responsive navbar using bootstrap. -->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mx-auto" href="./Aboutus.html">OppidanUtils</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form> -->
+                <li class="nav-item">
+                    <a class="btn btn-dark" href="new-business_o.html">Register a business</a>
+                    <!-- <a class="btn btn-dark" href="#">Services</a> -->
+                    <a class="btn btn-dark" href="./Aboutus.html">About Us</a>
+                    <a class="btn btn-dark" href="./Contactus.html">Contact Us</a>
+                </li>
+            </ul>
+            <a href="login.php?logout='1'" class="btn btn-success btn-md">
+                <span class="glyphicon glyphicon-log-out"></span>Log out
+            </a>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1>Services offered for apartments.</h1>
+        <div class="row align-items-center justify-content-center">
+            <div class="card-deck">
+                <div class="card" style="width:18rem;">
+                    <img src="electrician.jpg" class="card-img-top " alt="Electrician">
+                    <div class="card-body">
+                        <p class="card-text">Electricians near you.</p>
+                        <a href="electrician.php" class="btn btn-dark">Find an Electrician</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width:18rem;">
+                    <img src="plumber.jpg" class="card-img-top " alt="Electrician">
+                    <div class="card-body">
+                        <p class="card-text">Plumbers near you.</p>
+                        <a href="plumber.php" class="btn btn-dark">Find a Plumber</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width:18rem;">
+                    <img src="carpenter.jpg" class="card-img-top " alt="Carpenter">
+                    <div class="card-body">
+                        <p class="card-text">Carpenters near you.</p>
+                        <a href="carpenter.php" class="btn btn-dark">Find a Carpenter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center justify-content-center">
+            <div class="card-deck">
+                <div class="card" style="width:18rem;">
+                    <img src="painter.jpg" class="card-img-top " alt="Painter">
+                    <div class="card-body">
+                        <p class="card-text">Painters near you.</p>
+                        <a href="painter.php" class="btn btn-dark">Find a Painter</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width:18rem;">
+                    <img src="mechanic.jpg" class="card-img-top " alt="Mechanic">
+                    <div class="card-body">
+                        <p class="card-text">Mechanics near you.</p>
+                        <a href="mechanic.php" class="btn btn-dark">Find a Mechanic</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width:18rem;">
+                    <img src="security.jpg" class="card-img-top " alt="Security">
+                    <div class="card-body">
+                        <p class="card-text">Security service nearby.</p>
+                        <a href="security.php" class="btn btn-dark">Find a security service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center justify-content-center">
+            <div class="card-deck">
+                <div class="card" style="width:18rem;">
+                    <img src="pool.jpg" class="card-img-top " alt="Pool">
+                    <div class="card-body">
+                        <p class="card-text">Pool maintainence near you.</p>
+                        <a href="pool.php" class="btn btn-dark">Pool services nearby</a>
+                    </div>
+                </div>
+                <div class="card" style="width:18rem;">
+                    <img src="gym.jpg" class="card-img-top " alt="Gym">
+                    <div class="card-body">
+                        <p class="card-text">Gym trainers and maintainence near you.</p>
+                        <a href="gym.php" class="btn btn-dark">Gym services near you</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
